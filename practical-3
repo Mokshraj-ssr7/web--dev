@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS example (not recommended for large-scale projects) */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1 class="heading">Hello, CSS!</h1>
+        <p>This is a basic example demonstrating CSS.</p>
+        <p class="important">This paragraph has a different style.</p>
+    </div>
+</body>
+</html>
+
+
+
+/* External CSS file (styles.css) */
+/* Changing properties like color, size, background */
+
+/* ID selector */
+#content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Class selector */
+.heading {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/* Shadows */
+.box-shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Transformations */
+.transform-example {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* Gradient */
+.gradient-background {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+
+
+/* Positioning */
+.position-relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+    background-color: #ccc;
+    padding: 10px;
+}
