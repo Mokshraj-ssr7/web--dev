@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4</title>
+    <link rel="stylesheet" href="pract4.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 1em;
+}
+#main-id {
+    background-color: red;
+    background-image: linear-gradient(cyan, rgb(68, 0, 255));
+    font-size: 36px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+.main-class {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px 0;
+}
+.shadow {
+    text-shadow: 2px 2px 2px #aaa;
+    margin-bottom: 20px;
+}
+.mixed-orientation {
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    background-color: aqua;
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+.vertical-orientation {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: aqua;
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+.transform-right {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(20deg);
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+}
+.transform-left {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: skewX(1.5deg);
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+}
+.sticky-position {
+    width: 500px;
+    height: 500px;
+    border: solid black 2px;
+    position: sticky;
+    top: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+.absolute-x, .absolute-y, .absolute-z {
+    background-color: yellow;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+}
+.absolute-x {
+    z-index: 1;
+    left: 10px;
+    top: 10px;
+}
+
+</style>
+<body>
+    <div id="main-id">Hello I am D2D1</div>
+    <div class="main-class">Hello I am in Class 1</div>
+    <div class="main-class">Hello I am in Class 2</div>
+    <div class="shadow">My Shadow</div>
+
+    <div class="mixed-orientation">
+        <h3>Mixed Orientation</h3>
+        <p>Hi, this is my practical 4 of web development subject in semester 5 of computer engineering. This is an example of mixed orientation.</p>
+    </div>
+
+    <div class="vertical-orientation">
+        <h3>Vertical Orientation</h3>
+        <p>Hi, this is my practical 4 of web development subject in semester 5 of computer engineering. This is an example of vertical orientation.</p>
+    </div>
+
+    <div class="transform-right">
+        <p>Hello I am Right</p>
+    </div>
+
+    <div class="transform-left">
+        <p>Hello I am Left</p>
+    </div>
+
+    <div class="sticky-position">
+        <p>Hi, this is my practical 4 of web development subject in semester 5 of computer engineering. This is an example of mixed orientation.</p>
+    </div>
+     
+    <div class="absolute-x">
+        <p>X</p>
+    </div>
+
+    <div class="absolute-y">
+        <p>Y</p>
+    </div>
+
+    <div class="absolute-z">
+        <p>Z</p>
+    </div> 
+</body>
+</html>
